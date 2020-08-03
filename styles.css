@@ -11,8 +11,7 @@
   background: white none repeat scroll 0px center;
   border: 0px none;
   border-radius: 50%;
-  box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px,
-    rgba(9, 30, 66, 0.08) 0px 2px 4px 1px;
+  box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px, rgba(9, 30, 66, 0.08) 0px 2px 4px 1px;
   color: rgb(107, 119, 140);
   cursor: pointer;
   height: 24px;
@@ -52,6 +51,17 @@
   transform: translateZ(0px);
   width: 24px;
   z-index: 3;
+}
+
+div.css-1o3fej .draghandle {
+  position: absolute;
+  z-index: 100;
+  width: 8px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  cursor: col-resize;
+  float: right;
 }
 
 .css-mvkep6 {
@@ -344,8 +354,8 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   color: #172b4d;
   font-size: 14px;
   font-weight: 400;
