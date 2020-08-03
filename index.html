@@ -222,11 +222,55 @@
     </div>
     <script type="text/javascript">
       function myFunc() {
-        let width = document.getElementsByClassName('css-1o3fej')[0].style.width;
+        let width = document.getElementsByClassName('css-1o3fej')[0].style
+          .width;
         if (width == '276px') {
           document.getElementsByClassName('css-1o3fej')[0].style.width = '20px';
+          document.getElementsByClassName(
+            'ak-navigation-resize-button'
+          )[0].style.opacity = 1;
+          document
+            .querySelector('#btn-nav > span > svg > path')
+            .setAttribute(
+              'd',
+              'M10.294 9.698a.988.988 0 0 1 0-1.407 1.01 1.01 0 0 1 1.419 0l2.965 2.94a1.09 1.09 0 0 1 0 1.548l-2.955 2.93a1.01 1.01 0 0 1-1.42 0 .988.988 0 0 1 0-1.407l2.318-2.297-2.327-2.307z'
+            );
         } else {
-          document.getElementsByClassName('css-1o3fej')[0].style.width = '276px';
+          document.getElementsByClassName('css-1o3fej')[0].style.width =
+            '276px';
+          document
+            .querySelector('#btn-nav > span > svg > path')
+            .setAttribute(
+              'd',
+              'M13.706 9.698a.988.988 0 0 0 0-1.407 1.01 1.01 0 0 0-1.419 0l-2.965 2.94a1.09 1.09 0 0 0 0 1.548l2.955 2.93a1.01 1.01 0 0 0 1.42 0 .988.988 0 0 0 0-1.407l-2.318-2.297 2.327-2.307z'
+            );
+          setTimeout(() => {
+            document.getElementsByClassName(
+              'ak-navigation-resize-button'
+            )[0].style.opacity = 0;
+          }, 1000);
+        }
+        document
+          .getElementsByClassName('css-1btdkj5')[0]
+          .addEventListener('mouseover', mouseOver);
+        document
+          .getElementsByClassName('css-1btdkj5')[0]
+          .addEventListener('mouseout', mouseOut);
+
+        function mouseOver(e) {
+          console.log('mouseOver ', e);
+          document.getElementsByClassName(
+            'ak-navigation-resize-button'
+          )[0].style.opacity = 1;
+        }
+
+        function mouseOut(e) {
+          console.log('mouseOut ', e);
+          document.getElementsByClassName(
+            'ak-navigation-resize-button'
+          )[0].style.opacity = 1;
+          window.addEventListener('mouseover', mouseOver, false);
+          window.addEventListener('mouseout', mouseOut, false);
         }
       }
 
@@ -252,7 +296,8 @@
         }
 
         function stopResize(e) {
-          element.style.transition = 'width 300ms cubic-bezier(0.2, 0, 0, 1) 0s';
+          element.style.transition =
+            'width 300ms cubic-bezier(0.2, 0, 0, 1) 0s';
           window.removeEventListener('mousemove', Resize, false);
           window.removeEventListener('mouseup', stopResize, false);
         }

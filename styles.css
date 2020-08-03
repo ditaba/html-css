@@ -11,7 +11,8 @@
   background: white none repeat scroll 0px center;
   border: 0px none;
   border-radius: 50%;
-  box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px, rgba(9, 30, 66, 0.08) 0px 2px 4px 1px;
+  box-shadow: rgba(9, 30, 66, 0.08) 0px 0px 0px 1px,
+    rgba(9, 30, 66, 0.08) 0px 2px 4px 1px;
   color: rgb(107, 119, 140);
   cursor: pointer;
   height: 24px;
@@ -194,7 +195,7 @@ div.css-1o3fej .draghandle {
   padding-bottom: 12px;
 }
 
-.css-1hpn4bw::after {
+/* .css-1hpn4bw::after {
   border-radius: 1px;
   content: '';
   display: block;
@@ -238,9 +239,9 @@ div.css-1o3fej .draghandle {
   justify-content: flex-start;
   overflow-y: auto;
   position: relative;
-}
+} */
 
-.css-xdwmn0::after {
+/* .css-xdwmn0::after {
   border-radius: 1px;
   content: '';
   display: block;
@@ -273,24 +274,24 @@ div.css-1o3fej .draghandle {
   overflow: hidden;
   position: relative;
   width: 100%;
-}
+} */
 
-.css-424011 {
+/* .css-424011 {
   position: relative;
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   overflow-y: hidden;
-}
+} */
 
-.css-kq308b {
+/* .css-kq308b {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   height: 100%;
   overflow: hidden auto;
   width: 100%;
-}
+} */
 
 .css-4rxc6l {
   box-sizing: border-box;
@@ -354,8 +355,8 @@ body {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   color: #172b4d;
   font-size: 14px;
   font-weight: 400;
