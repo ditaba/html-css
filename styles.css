@@ -1,13 +1,13 @@
-.css-vwrpzw:hover .ak-navigation-resize-button {
+.css-sidebar-wrapper:hover .ak-navigation-resize-button {
   opacity: 1;
 }
 
-.css-889cso:hover {
+.resize-button:hover {
   background-color: rgb(76, 154, 255);
   color: white;
 }
 
-.css-889cso {
+.resize-button {
   background: white none repeat scroll 0px center;
   border: 0px none;
   border-radius: 50%;
@@ -28,7 +28,7 @@
   width: 24px;
 }
 
-.jdxIiL > svg {
+.btn-span > svg {
   max-height: 100%;
   max-width: 100%;
   overflow: hidden;
@@ -36,7 +36,7 @@
   vertical-align: bottom;
 }
 
-.jdxIiL {
+.btn-span {
   color: currentcolor;
   display: inline-block;
   fill: rgb(255, 255, 255);
@@ -44,7 +44,7 @@
   line-height: 1;
 }
 
-.css-1btdkj5 {
+.css-resize-wrapper {
   bottom: 0px;
   left: 100%;
   position: absolute;
@@ -54,7 +54,7 @@
   z-index: 3;
 }
 
-div.css-1o3fej .draghandle {
+div.css-sidebar-container .draghandle {
   position: absolute;
   z-index: 100;
   width: 8px;
@@ -65,7 +65,7 @@ div.css-1o3fej .draghandle {
   float: right;
 }
 
-.css-mvkep6 {
+.css-item-icon-active {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -78,7 +78,7 @@ div.css-1o3fej .draghandle {
   color: #0052cc;
 }
 
-.cuYMlR > svg {
+.icon > svg {
   max-height: 100%;
   max-width: 100%;
   overflow: hidden;
@@ -86,7 +86,7 @@ div.css-1o3fej .draghandle {
   vertical-align: bottom;
 }
 
-.cuYMlR {
+.icon {
   color: currentcolor;
   display: inline-block;
   fill: rgb(255, 255, 255);
@@ -94,7 +94,7 @@ div.css-1o3fej .draghandle {
   line-height: 1;
 }
 
-.css-1wgdpuu {
+.css-item-icon {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -107,28 +107,16 @@ div.css-1o3fej .draghandle {
   color: #42526e;
 }
 
-.css-1h2b0g4 {
-  line-height: 1.2857142857142858;
-}
-
-.css-1h2b0g4 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 1.1428571428571428;
+.css-title.title-active {
   color: #0052cc;
 }
 
-.css-1olrtn {
-  line-height: 1.2857142857142858;
-}
-
-.css-1olrtn {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
+.css-title {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  overflow-x: hidden;
   flex: 1 1 auto;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -137,20 +125,8 @@ div.css-1o3fej .draghandle {
   color: #42526e;
 }
 
-.css-t44v0r {
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  overflow-x: hidden;
-}
-
-.css-t3yiul.css-t3yiul,
-.css-1t5na7c.css-1t5na7c {
+.css-item-a-active.css-item-a-active,
+.css-item-a.css-item-a {
   -moz-box-align: center;
   align-items: center;
   border: medium none;
@@ -172,7 +148,7 @@ div.css-1o3fej .draghandle {
   fill: rgb(244, 245, 247);
 }
 
-.css-7xjigh {
+.css-item {
   width: 100%;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -188,112 +164,14 @@ div.css-1o3fej .draghandle {
   justify-content: space-between;
 }
 
-.css-1tw9lwf {
+.css-item-container {
   box-sizing: border-box;
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 12px;
 }
 
-/* .css-1hpn4bw::after {
-  border-radius: 1px;
-  content: '';
-  display: block;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 2px;
-  margin-left: 16px;
-  margin-top: auto;
-  position: relative;
-  z-index: 2;
-  background-color: #f4f5f7;
-}
-
-.css-1hpn4bw::before {
-  border-radius: 1px;
-  content: '';
-  display: block;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  height: 2px;
-  margin-left: 16px;
-  position: relative;
-  z-index: 2;
-  background-color: #f4f5f7;
-}
-
-.css-1hpn4bw {
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  height: 100%;
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  overflow-y: auto;
-  position: relative;
-} */
-
-/* .css-xdwmn0::after {
-  border-radius: 1px;
-  content: '';
-  display: block;
-  flex: 0 1 0%;
-  height: 2px;
-  left: 16px;
-  position: absolute;
-  right: 16px;
-  bottom: 0px;
-  z-index: 1;
-  background-color: rgba(9, 30, 66, 0.08);
-}
-
-.css-xdwmn0::before {
-  border-radius: 1px;
-  content: '';
-  display: block;
-  flex: 0 1 0%;
-  height: 2px;
-  left: 16px;
-  position: absolute;
-  right: 16px;
-  top: 0px;
-  z-index: 1;
-  background-color: rgba(9, 30, 66, 0.08);
-}
-
-.css-xdwmn0 {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-} */
-
-/* .css-424011 {
-  position: relative;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  overflow-y: hidden;
-} */
-
-/* .css-kq308b {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden auto;
-  width: 100%;
-} */
-
-.css-4rxc6l {
+.css-item-wrapper {
   box-sizing: border-box;
   height: 100%;
   left: 0px;
@@ -312,19 +190,19 @@ div.css-1o3fej .draghandle {
   transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
 }
 
-.css-1o3fej {
+.css-sidebar-container {
   height: 100%;
   position: relative;
 }
 
-.css-xbia9 {
+.css-sidebar {
   display: flex;
   flex-direction: row;
   overflow: hidden;
   height: 100%;
 }
 
-.css-vwrpzw {
+.css-sidebar-wrapper {
   bottom: 0px;
   left: 0px;
   position: fixed;
