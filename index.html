@@ -178,15 +178,15 @@
           <div class="draghandle" style="width: 6px; height: 100vh;"></div>
         </div>
       </div>
-      <div class="css-1btdkj5">
+      <div class="css-resize-wrapper">
         <button
-          class="ak-navigation-resize-button css-889cso"
+          class="ak-navigation-resize-button resize-button"
           type="button"
           aria-expanded="true"
           id="btn-nav"
           onclick="myFunc()"
         >
-          <span class="sc-jbKcbu jdxIiL">
+          <span class="btn-span">
             <svg
               width="24"
               height="24"
@@ -238,10 +238,10 @@
           }, 1000);
         }
         document
-          .getElementsByClassName('css-1btdkj5')[0]
+          .getElementsByClassName('css-resize-wrapper')[0]
           .addEventListener('mouseover', mouseOver);
         document
-          .getElementsByClassName('css-1btdkj5')[0]
+          .getElementsByClassName('css-resize-wrapper')[0]
           .addEventListener('mouseout', mouseOut);
 
         function mouseOver(e) {

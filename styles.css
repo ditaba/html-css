@@ -2,12 +2,12 @@
   opacity: 1;
 }
 
-.css-889cso:hover {
+.resize-button:hover {
   background-color: rgb(76, 154, 255);
   color: white;
 }
 
-.css-889cso {
+.resize-button {
   background: white none repeat scroll 0px center;
   border: 0px none;
   border-radius: 50%;
@@ -28,7 +28,7 @@
   width: 24px;
 }
 
-.jdxIiL > svg {
+.btn-span > svg {
   max-height: 100%;
   max-width: 100%;
   overflow: hidden;
@@ -36,7 +36,7 @@
   vertical-align: bottom;
 }
 
-.jdxIiL {
+.btn-span {
   color: currentcolor;
   display: inline-block;
   fill: rgb(255, 255, 255);
@@ -44,7 +44,7 @@
   line-height: 1;
 }
 
-.css-1btdkj5 {
+.css-resize-wrapper {
   bottom: 0px;
   left: 100%;
   position: absolute;
