@@ -107,46 +107,22 @@ div.css-sidebar-container .draghandle {
   color: #42526e;
 }
 
-.css-1h2b0g4 {
-  line-height: 1.2857142857142858;
-}
-
-.css-1h2b0g4 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 1.1428571428571428;
+.css-title.title-active {
   color: #0052cc;
 }
 
-.css-1olrtn {
-  line-height: 1.2857142857142858;
-}
-
-.css-1olrtn {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
+.css-title {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  overflow-x: hidden;
   flex: 1 1 auto;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   line-height: 1.1428571428571428;
   color: #42526e;
-}
-
-.css-t44v0r {
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  overflow-x: hidden;
 }
 
 .css-item-a-active.css-item-a-active,
