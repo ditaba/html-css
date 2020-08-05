@@ -31,27 +31,23 @@
     ></script>
   </head>
   <body>
-    <div class="css-vwrpzw">
-      <div class="css-xbia9">
+    <div class="css-sidebar-wrapper">
+      <div class="css-sidebar">
         <div
           id="resizable"
-          class="css-1o3fej"
+          class="css-sidebar-container"
           style="
             will-change: width;
             width: 276px;
             transition: width 300ms cubic-bezier(0.2, 0, 0, 1) 0s;
           "
         >
-          <div class="css-4rxc6l">
-            <!-- <div class="css-kq308b"> -->
-            <!-- <div class="css-424011"> -->
-            <!-- <div class="css-xdwmn0"> -->
-            <!-- <div class="css-1hpn4bw"> -->
-            <div class="css-1tw9lwf">
-              <div class="css-7xjigh">
-                <a class="css-1t5na7c">
-                  <div class="css-1wgdpuu">
-                    <span class="sc-jAaTju cuYMlR">
+          <div class="css-item-wrapper">
+            <div class="css-item-container">
+              <div class="css-item">
+                <a class="css-item-a">
+                  <div class="css-item-icon">
+                    <span class="css-icon icon">
                       <svg
                         width="24"
                         height="24"
@@ -69,13 +65,13 @@
                   </div>
                   <div class="css-t44v0r">
                     <div class="css-1olrtn">Roadmap</div>
-                  </div></a
-                >
+                  </div>
+                </a>
               </div>
-              <div class="css-7xjigh">
-                <a class="css-t3yiul">
-                  <div class="css-mvkep6">
-                    <span class="sc-jAaTju cuYMlR" role="presentation">
+              <div class="css-item">
+                <a class="css-item-a-active">
+                  <div class="css-item-icon-active">
+                    <span class="css-icon icon" role="presentation">
                       <svg
                         width="24"
                         height="24"
@@ -97,10 +93,10 @@
                   </div>
                 </a>
               </div>
-              <div class="css-7xjigh">
-                <a class="css-1t5na7c">
-                  <div class="css-1wgdpuu">
-                    <span class="sc-jAaTju cuYMlR">
+              <div class="css-item">
+                <a class="css-item-a">
+                  <div class="css-item-icon">
+                    <span class="css-icon icon">
                       <svg
                         width="24"
                         height="24"
@@ -125,10 +121,10 @@
                   </div></a
                 >
               </div>
-              <div class="css-7xjigh">
-                <a class="css-1t5na7c">
-                  <div class="css-1wgdpuu">
-                    <span class="sc-jAaTju cuYMlR">
+              <div class="css-item">
+                <a class="css-item-a">
+                  <div class="css-item-icon">
+                    <span class="css-icon icon">
                       <svg
                         width="24"
                         height="24"
@@ -155,10 +151,10 @@
                   </div>
                 </a>
               </div>
-              <div class="css-7xjigh">
-                <a class="css-1t5na7c">
-                  <div class="css-1wgdpuu">
-                    <span class="sc-jAaTju cuYMlR">
+              <div class="css-item">
+                <a class="css-item-a">
+                  <div class="css-item-icon">
+                    <span class="css-icon icon">
                       <svg
                         width="24"
                         height="24"
@@ -182,17 +178,11 @@
                 </a>
               </div>
             </div>
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </div> -->
-            <!-- </div> -->
           </div>
           <div class="draghandle" style="width: 6px; height: 100vh;"></div>
         </div>
       </div>
       <div class="css-1btdkj5">
-        <!-- <div> -->
-        <!-- <div> -->
         <button
           class="ak-navigation-resize-button css-889cso"
           type="button"
@@ -216,16 +206,16 @@
             </svg>
           </span>
         </button>
-        <!-- </div> -->
-        <!-- </div> -->
       </div>
     </div>
     <script type="text/javascript">
       function myFunc() {
-        let width = document.getElementsByClassName('css-1o3fej')[0].style
-          .width;
+        let width = document.getElementsByClassName('css-sidebar-container')[0]
+          .style.width;
         if (width == '276px') {
-          document.getElementsByClassName('css-1o3fej')[0].style.width = '20px';
+          document.getElementsByClassName(
+            'css-sidebar-container'
+          )[0].style.width = '20px';
           document.getElementsByClassName(
             'ak-navigation-resize-button'
           )[0].style.opacity = 1;
@@ -236,8 +226,9 @@
               'M10.294 9.698a.988.988 0 0 1 0-1.407 1.01 1.01 0 0 1 1.419 0l2.965 2.94a1.09 1.09 0 0 1 0 1.548l-2.955 2.93a1.01 1.01 0 0 1-1.42 0 .988.988 0 0 1 0-1.407l2.318-2.297-2.327-2.307z'
             );
         } else {
-          document.getElementsByClassName('css-1o3fej')[0].style.width =
-            '276px';
+          document.getElementsByClassName(
+            'css-sidebar-container'
+          )[0].style.width = '276px';
           document
             .querySelector('#btn-nav > span > svg > path')
             .setAttribute(
