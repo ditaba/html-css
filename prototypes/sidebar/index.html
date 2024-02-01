@@ -63,9 +63,7 @@
                       </svg>
                     </span>
                   </div>
-                  <div class="css-title">
-                    Roadmap
-                  </div>
+                  <div class="css-title">Roadmap</div>
                 </a>
               </div>
               <div class="css-item">
@@ -88,9 +86,7 @@
                       </svg>
                     </span>
                   </div>
-                  <div class="css-title title-active">
-                    Board
-                  </div>
+                  <div class="css-title title-active">Board</div>
                 </a>
               </div>
               <div class="css-item">
@@ -116,9 +112,7 @@
                       </svg>
                     </span>
                   </div>
-                  <div class="css-title">
-                    Pages
-                  </div>
+                  <div class="css-title">Pages</div>
                 </a>
               </div>
               <div class="css-item">
@@ -144,9 +138,7 @@
                       </svg>
                     </span>
                   </div>
-                  <div class="css-title">
-                    Add item
-                  </div>
+                  <div class="css-title">Add item</div>
                 </a>
               </div>
               <div class="css-item">
@@ -168,14 +160,12 @@
                       </svg>
                     </span>
                   </div>
-                  <div class="css-title">
-                    Project settings
-                  </div>
+                  <div class="css-title">Project settings</div>
                 </a>
               </div>
             </div>
           </div>
-          <div class="draghandle" style="width: 6px; height: 100vh;"></div>
+          <div class="draghandle" style="width: 6px; height: 100vh"></div>
         </div>
       </div>
       <div class="css-resize-wrapper">
@@ -264,11 +254,7 @@
       $(document).ready(function () {
         let element = document.getElementById('resizable');
         if (element) {
-          let resizer = document.createElement('div');
-          resizer.className = 'draghandle';
-          resizer.style.width = '6px';
-          resizer.style.height = '100vh';
-          element.appendChild(resizer);
+          let resizer = document.getElementsByClassName('draghandle')[0];
           resizer.addEventListener('mousedown', initResize, false);
         }
 
