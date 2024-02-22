@@ -1,15 +1,21 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import { Sidebar } from "./pages";
+import { Sidebar, Home, Root } from "./pages";
 import "./App.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world</div>,
+    element: <Root />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      { path: "/sidebar", element: <Sidebar /> },
+    ],
   },
-  { path: "/sidebar", element: <Sidebar /> },
 ]);
 
 const App = () => {
