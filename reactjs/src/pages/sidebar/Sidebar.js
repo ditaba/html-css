@@ -1,92 +1,92 @@
 /* eslint-disable */
-import React, { useEffect, useState } from 'react';
-import './sidebar.css';
+import React, { useEffect, useState } from "react";
+import "./sidebar.css";
 
 const Sidebar = () => {
   const [element, setElement] = useState(null);
 
   useEffect(() => {
-    let element = document.getElementById('resizable');
+    let element = document.getElementById("resizable");
     setElement(element);
   }, []);
 
   useEffect(() => {
     if (element) {
-      let resizer = document.createElement('div');
-      resizer.className = 'draghandle';
-      resizer.style.width = '6px';
-      resizer.style.height = '100vh';
+      let resizer = document.createElement("div");
+      resizer.className = "draghandle";
+      resizer.style.width = "6px";
+      resizer.style.height = "100vh";
       element.appendChild(resizer);
-      resizer.addEventListener('mousedown', initResize, false);
+      resizer.addEventListener("mousedown", initResize, false);
     }
   }, [element]);
 
   const initResize = (e) => {
-    element.style.transition = 'width 0ms cubic-bezier(0.2, 0, 0, 1) 0s';
-    window.addEventListener('mousemove', Resize, false);
-    window.addEventListener('mouseup', stopResize, false);
+    element.style.transition = "width 0ms cubic-bezier(0.2, 0, 0, 1) 0s";
+    window.addEventListener("mousemove", Resize, false);
+    window.addEventListener("mouseup", stopResize, false);
   };
 
   const Resize = (e) => {
-    element.style.width = e.clientX - element.offsetLeft + 'px';
+    element.style.width = e.clientX - element.offsetLeft + "px";
   };
 
   const stopResize = (e) => {
-    element.style.transition = 'width 300ms cubic-bezier(0.2, 0, 0, 1) 0s';
-    window.removeEventListener('mousemove', Resize, false);
-    window.removeEventListener('mouseup', stopResize, false);
+    element.style.transition = "width 300ms cubic-bezier(0.2, 0, 0, 1) 0s";
+    window.removeEventListener("mousemove", Resize, false);
+    window.removeEventListener("mouseup", stopResize, false);
   };
 
   const myFunc = (e) => {
     e.preventDefault();
-    let width = document.getElementsByClassName('css-sidebar-container')[0]
+    let width = document.getElementsByClassName("css-sidebar-container")[0]
       .style.width;
-    if (width === '276px') {
-      document.getElementsByClassName('css-sidebar-container')[0].style.width =
-        '20px';
+    if (width === "276px") {
+      document.getElementsByClassName("css-sidebar-container")[0].style.width =
+        "20px";
       document.getElementsByClassName(
-        'ak-navigation-resize-button'
+        "ak-navigation-resize-button"
       )[0].style.opacity = 1;
       document
-        .querySelector('#btn-nav > span > svg > path')
+        .querySelector("#btn-nav > span > svg > path")
         .setAttribute(
-          'd',
-          'M10.294 9.698a.988.988 0 0 1 0-1.407 1.01 1.01 0 0 1 1.419 0l2.965 2.94a1.09 1.09 0 0 1 0 1.548l-2.955 2.93a1.01 1.01 0 0 1-1.42 0 .988.988 0 0 1 0-1.407l2.318-2.297-2.327-2.307z'
+          "d",
+          "M10.294 9.698a.988.988 0 0 1 0-1.407 1.01 1.01 0 0 1 1.419 0l2.965 2.94a1.09 1.09 0 0 1 0 1.548l-2.955 2.93a1.01 1.01 0 0 1-1.42 0 .988.988 0 0 1 0-1.407l2.318-2.297-2.327-2.307z"
         );
     } else {
-      document.getElementsByClassName('css-sidebar-container')[0].style.width =
-        '276px';
+      document.getElementsByClassName("css-sidebar-container")[0].style.width =
+        "276px";
       document
-        .querySelector('#btn-nav > span > svg > path')
+        .querySelector("#btn-nav > span > svg > path")
         .setAttribute(
-          'd',
-          'M13.706 9.698a.988.988 0 0 0 0-1.407 1.01 1.01 0 0 0-1.419 0l-2.965 2.94a1.09 1.09 0 0 0 0 1.548l2.955 2.93a1.01 1.01 0 0 0 1.42 0 .988.988 0 0 0 0-1.407l-2.318-2.297 2.327-2.307z'
+          "d",
+          "M13.706 9.698a.988.988 0 0 0 0-1.407 1.01 1.01 0 0 0-1.419 0l-2.965 2.94a1.09 1.09 0 0 0 0 1.548l2.955 2.93a1.01 1.01 0 0 0 1.42 0 .988.988 0 0 0 0-1.407l-2.318-2.297 2.327-2.307z"
         );
       setTimeout(() => {
         document.getElementsByClassName(
-          'ak-navigation-resize-button'
+          "ak-navigation-resize-button"
         )[0].style.opacity = 0;
       }, 1000);
     }
     document
-      .getElementsByClassName('css-resize-wrapper')[0]
-      .addEventListener('mouseover', mouseOver);
+      .getElementsByClassName("css-resize-wrapper")[0]
+      .addEventListener("mouseover", mouseOver);
     document
-      .getElementsByClassName('css-resize-wrapper')[0]
-      .addEventListener('mouseout', mouseOut);
+      .getElementsByClassName("css-resize-wrapper")[0]
+      .addEventListener("mouseout", mouseOut);
 
     function mouseOver(e) {
       document.getElementsByClassName(
-        'ak-navigation-resize-button'
+        "ak-navigation-resize-button"
       )[0].style.opacity = 1;
     }
 
     function mouseOut(e) {
       document.getElementsByClassName(
-        'ak-navigation-resize-button'
+        "ak-navigation-resize-button"
       )[0].style.opacity = 1;
-      window.addEventListener('mouseover', mouseOver, false);
-      window.addEventListener('mouseout', mouseOut, false);
+      window.addEventListener("mouseover", mouseOver, false);
+      window.addEventListener("mouseout", mouseOut, false);
     }
   };
 
@@ -97,9 +97,9 @@ const Sidebar = () => {
           id="resizable"
           className="css-sidebar-container"
           style={{
-            willChange: 'width',
-            width: '276px',
-            transition: 'width 300ms cubic-bezier(0.2, 0, 0, 1) 0s',
+            willChange: "width",
+            width: "276px",
+            transition: "width 300ms cubic-bezier(0.2, 0, 0, 1) 0s",
           }}
         >
           <div className="css-item-wrapper">
@@ -223,7 +223,7 @@ const Sidebar = () => {
           </div>
           <div
             className="draghandle"
-            style={{ width: '6px', height: '100vh' }}
+            style={{ width: "6px", height: "100vh" }}
           ></div>
         </div>
       </div>
