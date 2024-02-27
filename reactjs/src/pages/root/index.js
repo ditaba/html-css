@@ -1,3 +1,3 @@
-import Root from "./Root";
+import RootPage from "./Root";
 
-export { Root };
+export { RootPage };
