@@ -210,7 +210,7 @@ div.css-sidebar-container .draghandle {
   z-index: 200;
 }
 
-html,
+/* html,
 body,
 p,
 div,
@@ -226,15 +226,15 @@ form,
 fieldset {
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
   color: #172b4d;
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #172b4d;
   font-size: 14px;
   font-weight: 400;
