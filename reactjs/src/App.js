@@ -1,7 +1,7 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
-import { Sidebar, HomePage, RootPage } from "./pages";
+import { HomePage, RootPage, SidebarPage, CVPage } from "./pages";
 import ErrorPage from "./pages/Error";
 import "./App.css";
 
@@ -15,7 +15,8 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage />,
       },
-      { path: "sidebar", element: <Sidebar /> },
+      { path: "sidebar", element: <SidebarPage /> },
+      { path: "cv", element: <CVPage /> },
     ],
   },
 ]);

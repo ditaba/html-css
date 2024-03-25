@@ -28,6 +28,16 @@ function MainNavigation() {
               Sidebar
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="cv"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              CV
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>

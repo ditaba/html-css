@@ -1,6 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 
-const HomePage = () => {
+const Home = () => {
   const navigate = useNavigate();
 
   function navigateHandler() {
@@ -8,7 +8,7 @@ const HomePage = () => {
   }
 
   return (
-    <>
+    <div style={{ textAlign: "center" }}>
       <h1>My Home Page</h1>
       <p>
         Go to <Link to="sidebar">go to sidebar page</Link>
@@ -16,8 +16,8 @@ const HomePage = () => {
       <p>
         <button onClick={navigateHandler}>Navigate</button>
       </p>
-    </>
+    </div>
   );
 };
 
-export default HomePage;
+export default Home;
